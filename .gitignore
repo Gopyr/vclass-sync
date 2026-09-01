@@ -1,0 +1,13 @@
+# ---> Kotlin
+.idea/
+*.iml
+.gradle/
+build/
+out/
+
+# ---> Gradle wrapper (keep if you add wrapper)
+!gradle/wrapper/gradle-wrapper.jar
+
+# ---> OS
+.DS_Store
+Thumbs.db
