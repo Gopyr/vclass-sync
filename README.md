@@ -1,6 +1,6 @@
 # VClass Offline Sync Engine
 
-> Offline-first sync engine for Gunadarma VClass — Kotlin library with Room-like in-memory cache + durable-queue interface.
+> Offline-first sync engine for Gunadarma VClass, a Kotlin library with a Room-like in-memory cache and durable-queue interface.
 
 Portfolio project by **Gopyr Informatics, Gunadarma University**. Built as a real Android library module, not a demo throwaway.
 
@@ -10,13 +10,13 @@ Portfolio project by **Gopyr Informatics, Gunadarma University**. Built as a rea
 - A Kotlin/JVM library (`com.gopyr.sync`) that gives an Android app optimistic offline writes, a FIFO queue with exponential backoff, conflict surfacing, and a `StateFlow`-based sync state for ViewModels.
 - Includes a `VClassDao` + `InMemoryCache` that mirrors a Room DAO, and a `SyncQueue` + `InMemorySyncQueue` that mirrors a Room-backed queue.
 - Transport-agnostic: you inject `SyncTransport` (Retrofit/Ktor in the real app). No network code inside the library.
-- Tested on JVM with `kotlinx-coroutines-test` — no Android instrumentation needed for core logic.
+- Tested on JVM with `kotlinx-coroutines-test`: no Android instrumentation needed for core logic.
 
 **What this is NOT (yet):**
-- Not a full VClass app — it is the sync layer only.
-- Not using real `androidx.room:room-runtime` — see [Limitations](#limitations) for the migration path.
-- Not durability-tested across process death — in-memory stores reset on kill (by design for the library; host persists if needed).
-- Not handling file/binary upload resumability — payloads are JSON strings; large files need a separate uploader.
+- Not a full VClass app; it is the sync layer only.
+- Not using real `androidx.room:room-runtime`: see [Limitations](#limitations) for the migration path.
+- Not durability-tested across process death: in-memory stores reset on kill (by design for the library; host persists if needed).
+- Not handling file/binary upload resumability: payloads are JSON strings; large files need a separate uploader.
 
 ## Architecture
 
@@ -133,7 +133,7 @@ gradle publishToMavenLocal   # to consume from an Android app via mavenLocal()
 
 ## Author
 
-Gopyr — Informatics, Gunadarma University. Portfolio library; contributions welcome.
+Gopyr, Informatics student at Gunadarma University. Portfolio library; contributions welcome.
 
 ## License
 
