@@ -1,1 +1,2 @@
 - 2026-11-02 chore: prune unused dependencies
+- 2026-11-22 feat: expose toggle in settings
