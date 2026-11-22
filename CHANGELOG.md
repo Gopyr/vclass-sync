@@ -1,0 +1,1 @@
+- 2026-11-22 fix: null check before session read
