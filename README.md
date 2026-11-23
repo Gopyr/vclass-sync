@@ -138,3 +138,4 @@ Gopyr, mahasiswa Informatika di Gunadarma University. Library portfolio; kontrib
 ## Lisensi
 
 MIT
+- 2026-11-23 refactor: flatten nested conditionals
